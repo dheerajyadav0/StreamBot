@@ -1,10 +1,22 @@
 # NEtflicx gpt
 
 -create react app
--configured Tailwind]
+-configured Tailwind
+-routing
 -header
 -login form
 singnup form
+-Form validation
+-useRefhook
+-Firebase Setup 
+-Deploying the app on production
+-create signup user account in firebase
+-Implement sign in user api
+-created Redux Store with userSlice
+- implement Sign out
+
+-update profile api call
+-fetch from TMDB movies
 
 # Features
 
