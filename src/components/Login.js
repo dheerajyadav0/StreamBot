@@ -3,11 +3,12 @@ import { useState , useRef } from 'react';
 import Header from './Header';
 import { checkValidData } from '../utils/validate';
 import {  createUserWithEmailAndPassword ,signInWithEmailAndPassword, updateProfile} from "firebase/auth";
-import { useNavigate } from 'react-router-dom';
+
 
 import { auth } from '../utils/Firebase';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { USER_AVATAR } from '../utils/constants';
 
 
 const Login = () => {
@@ -15,7 +16,7 @@ const Login = () => {
 
     //creating a useState variable to store error message
     const [errorMessage, seterrorMessage]= useState(null);
-    const navigate  = useNavigate();
+  
     const dispatch = useDispatch();
     
 
@@ -50,7 +51,7 @@ const Login = () => {
 
        updateProfile(user, {
         displayName: name.current.value,
-         photoURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWmxAh2YQyMmIHRVZRBIQutyjm8bvpaeQyw&s"
+         photoURL: USER_AVATAR
       
       }).then(() => {
         const {uid,email,displayName,photoURL} = auth.currentUser;
@@ -63,7 +64,6 @@ const Login = () => {
       displayName:displayName,
       photoURL:photoURL}));
    
-        navigate("/browse");
       }).catch((error) => {
        
         seterrorMessage(error.message);
@@ -93,8 +93,7 @@ const Login = () => {
    
  
     // ...
-    console.log(user);
-    navigate("/browse");
+   
     
   })
   .catch((error) => {
