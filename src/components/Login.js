@@ -69,7 +69,7 @@ const Login = () => {
         seterrorMessage(error.message);
       });
     
-       console.log(user);
+    
       
        
   })
