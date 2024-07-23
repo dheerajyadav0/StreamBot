@@ -13,8 +13,7 @@ singnup form
 -create signup user account in firebase
 -Implement sign in user api
 -created Redux Store with userSlice
-- implement Sign out
-
+-implement Sign out
 -update profile api call
 -Bugfix :   Sign up user displaying and  profile picture update
 -Bugfix :   if user is not logged in redirect to login page vice-versa
@@ -31,7 +30,16 @@ singnup form
 -Update Store With Trailer
 -Embedded the yt video and make it autoplay and mute
 -Tailwind Classes to make it look gd
-
+-Build secondary component
+-build MovieList
+-build MovieCrd
+-TMDB Image CDN Url
+-Made the Browse page amazing with Tailwind CSS
+-UsepopularMovies Custom hooks
+-gpt search page 
+-gpt search bar 
+-Multi-language feature(*)
+-integrate GPT apis(get open ai key)
 
 # Features
 
