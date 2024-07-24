@@ -40,6 +40,12 @@ singnup form
 -gpt search bar 
 -Multi-language feature(*)
 -integrate GPT apis(get open ai key)
+-fetch gpt movie sugestions from tmdb
+-gpt slice and added the data 
+-reused movie list component
+-memoization
+-added .env file to gitignore
+- make our site responsive
 
 # Features
 

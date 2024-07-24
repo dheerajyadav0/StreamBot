@@ -13,7 +13,7 @@ const VedioBackground = ({movieId}) => {
   return (
     <div className="">
       <iframe
-       className="w-screen aspect-video"
+       className=" w-screen aspect-video"
         src={"https://www.youtube.com/embed/" + trailerVedio?.key + "?&autoplay=1&mute=1"}
         title="YouTube video player"
       

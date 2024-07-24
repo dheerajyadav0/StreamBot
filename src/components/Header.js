@@ -71,18 +71,18 @@ const handleLanguageChange=(e)=>{
 
 
   return (
-    <div  className='  absolute px-8 py-2 bg-gradient-to-b from-black shadow-lg z-10 w-screen flex justify-between'>
+    <div  className='  absolute px-8 py-2 bg-gradient-to-b from-black shadow-lg z-10 w-screen flex justify-between  flex-col md:flex-row bg-black sm:bg-blue-900 md:bg-green-900  md:justify-between'>
      <img
-    className='w-44'
+    className=' w-44 mx-auto md:mx-0'
     alt='logo'
     src={LOGO}
      />
     {user &&( 
-      <div className='flex p-2'>
+      <div className='flex p-2 justify-between'>
 
         {showGptSearch&&(
           <select 
-          className='p-2 bg-gray-900 text-white m-2 '
+          className='p-2px-4 mx-4 bg-gray-900 text-white m-2 '
            onChange={handleLanguageChange}>
           {SUPPORTED_LANGUAGES.map(lang=> (
            <option key={lang.identifier} value={lang.identifier}>
@@ -97,7 +97,7 @@ const handleLanguageChange=(e)=>{
           {showGptSearch?"Home page" :"GPT Search"}
           </button>
       <img
-      className='w-12 h-12 '
+      className='hidden md:block w-12 h-12 '
       alt ="usericon"
       // src={user?.photoURL}
       src='https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg'
